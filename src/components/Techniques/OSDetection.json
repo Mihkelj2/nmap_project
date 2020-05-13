@@ -1,0 +1,27 @@
+[
+  {
+    "Switch": "-O",
+    "Example": "nmap 192.168.1.1 -O",
+    "Description": "Remote OS detection using TCP/IP\nstack fingerprinting"
+  },
+  {
+    "Switch": "-O --osscan-limit",
+    "Example": "nmap 192.168.1.1 -O --osscan-limit",
+    "Description": "If at least one open and one closed\nTCP port are not found it will not try\nOS detection against host"
+  },
+  {
+    "Switch": "-O --osscan-guess",
+    "Example": "nmap 192.168.1.1 -O --osscan-guess",
+    "Description": "Makes Nmap guess more aggressively"
+  },
+  {
+    "Switch": "-O --max-os-tries",
+    "Example": "nmap 192.168.1.1 -O --max-os-tries 1",
+    "Description": "Set the maximum number x of OS\ndetection tries against a target"
+  },
+  {
+    "Switch": "-A",
+    "Example": "nmap 192.168.1.1 -A",
+    "Description": "Enables OS detection, version detection, script scanning, and traceroute"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Switch": "-sL",
+    "Example": "nmap 192.168.1.1-3 -sL",
+    "Description": "No Scan. List targets only"
+  },
+  {
+    "Switch": "-sn",
+    "Example": "nmap 192.168.1.1/24 -sn",
+    "Description": "Disable port scanning. Host discovery only."
+  },
+  {
+    "Switch": "-Pn",
+    "Example": "nmap 192.168.1.1-5 -Pn",
+    "Description": "Disable host discovery. Port scan only."
+  },
+  {
+    "Switch": "-PS",
+    "Example": "nmap 192.168.1.1-5 -PS22-25,80",
+    "Description": "TCP SYN discovery on port x. Port 80 by default"
+  },
+  {
+    "Switch": "-PA",
+    "Example": "nmap 192.168.1.1-5 -PA22-25,80",
+    "Description": "TCP ACK discovery on port x. Port 80 by default"
+  },
+  {
+    "Switch": "-PU",
+    "Example": "nmap 192.168.1.1-5 -PU53",
+    "Description": "UDP discovery on port x. Port 40125 by default"
+  },
+  {
+    "Switch": "-PR",
+    "Example": "nmap 192.168.1.1-1/24 -PR",
+    "Description": "ARP discovery on local network"
+  },
+  {
+    "Switch": "-n",
+    "Example": "nmap 192.168.1.1 -n",
+    "Description": "Never do DNS resolution"
+  }
+]

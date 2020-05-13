@@ -1,0 +1,12 @@
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: 33.33%;
+    color: #000000;
+}

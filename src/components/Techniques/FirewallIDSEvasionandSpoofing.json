@@ -1,0 +1,42 @@
+[
+  {
+    "Switch": "-f",
+    "Example": "nmap 192.168.1.1 -f",
+    "Description": "Requested scan (including ping scans) use tiny fragmented IP packets. Harder for packet filters"
+  },
+  {
+    "Switch": "--mtu",
+    "Example": "nmap 192.168.1.1 --mtu 32",
+    "Description": "Set your own offset size"
+  },
+  {
+    "Switch": "-D",
+    "Example": "nmap -D 192.168.1.101,192.168.1.102,\n192.168.1.103,192.168.1.23 192.168.1.1",
+    "Description": "Send scans from spoofed IPs"
+  },
+  {
+    "Switch": "-D",
+    "Example": "nmap -D decoy-ip1,decoy-ip2,your-own-ip,decoy-ip3,decoy-ip4 remote-host-ip",
+    "Description": "Above example explained"
+  },
+  {
+    "Switch": "-S",
+    "Example": "nmap -S www.microsoft.com www.facebook.com",
+    "Description": "Scan Facebook from Microsoft (-e eth0 -Pn may be required)"
+  },
+  {
+    "Switch": "-g",
+    "Example": "nmap -g 53 192.168.1.1",
+    "Description": "Use given source port number"
+  },
+  {
+    "Switch": "--proxies",
+    "Example": "nmap --proxies http://192.168.1.1:8080, http://192.168.1.2:8080 192.168.1.1",
+    "Description": "Relay connections through HTTP/SOCKS4 proxies"
+  },
+  {
+    "Switch": "--data-length",
+    "Example": "nmap --data-length 200 192.168.1.1",
+    "Description": "Appends random data to sent packets"
+  }
+]

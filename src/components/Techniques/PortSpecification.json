@@ -1,0 +1,47 @@
+[
+  {
+    "Switch": "-p",
+    "Example": "nmap 192.168.1.1 -p 21",
+    "Description": "Port scan for port x"
+  },
+  {
+    "Switch": "-p",
+    "Example": "nmap 192.168.1.1 -p 21-100",
+    "Description": "Port range"
+  },
+  {
+    "Switch": "-p",
+    "Example": "nmap 192.168.1.1 -p U:53,T:21-25,80",
+    "Description": "Port scan multiple TCP and UDP ports"
+  },
+  {
+    "Switch": "-p-",
+    "Example": "nmap 192.168.1.1 -p-",
+    "Description": "Port scan all ports"
+  },
+  {
+    "Switch": "-p",
+    "Example": "nmap 192.168.1.1 -p http,https",
+    "Description": "Port scan from service name"
+  },
+  {
+    "Switch": "-F",
+    "Example": "nmap 192.168.1.1 -F",
+    "Description": "Fast port scan (100 ports)"
+  },
+  {
+    "Switch": "--top-ports",
+    "Example": "nmap 192.168.1.1 --top-ports 2000",
+    "Description": "Port scan the top x ports"
+  },
+  {
+    "Switch": "-p-65535",
+    "Example": "nmap 192.168.1.1 -p-65535",
+    "Description": "Leaving off initial port in range. makes the scan start at port 1"
+  },
+  {
+    "Switch": "-p0-",
+    "Example": "nmap 192.168.1.1 -p0-",
+    "Description": "Leaving off end port in range. makes the scan go through to port 65535"
+  }
+]

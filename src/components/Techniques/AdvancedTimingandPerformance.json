@@ -1,0 +1,42 @@
+[
+  {
+    "Switch": "--host-timeout <time>",
+    "Example": "1s; 4m; 2h",
+    "Description": "Give up on target after this long"
+  },
+  {
+    "Switch": "--min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>",
+    "Example": "1s; 4m; 2h",
+    "Description": "Specifies probe round trip time"
+  },
+  {
+    "Switch": "--min-hostgroup/max-hostgroup <size><size>",
+    "Example": "50; 1024",
+    "Description": "Polite (2) slows down the scan to use\nless bandwidth and use less target\nmachine resources"
+  },
+  {
+    "Switch": "--min-parallelism/max-parallelism <numprobes>",
+    "Example": "10; 1",
+    "Description": "Probe parallelization"
+  },
+  {
+    "Switch": "--scan-delay/--max-scan-delay <time>",
+    "Example": "20ms; 2s; 4m; 5h",
+    "Description": "Adjust delay between probes"
+  },
+  {
+    "Switch": "--max-retries <tries>",
+    "Example": "3",
+    "Description": "Specify the maximum number\nof port scan probe retransmissions"
+  },
+  {
+    "Switch": "--min-rate <number>",
+    "Example": "100",
+    "Description": "Send packets no slower than <numberr> per second"
+  },
+  {
+    "Switch": "--max-rate <number>",
+    "Example": "100",
+    "Description": "Send packets no faster than <number> per second"
+  }
+]

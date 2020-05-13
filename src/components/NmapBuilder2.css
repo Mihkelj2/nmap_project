@@ -1,0 +1,47 @@
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 15%;
+    padding: 31px;
+    border: #282c34;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.Script{
+    color: #677381;
+    text-align: center;
+}
+
+.MainHeader {
+    font-size: xx-large;
+}
+
+.button {
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #4B4A54;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+

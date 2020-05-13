@@ -1,0 +1,71 @@
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #4B4A54;
+    padding: 20px 10px;
+}
+
+body{
+    background-image: linear-gradient(to right, #82A0AA, #A3CFCD);
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    border: #282c34;
+    color: #A3CFCD;
+}
+
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+.scrollmenu {
+    background-color: #677381;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.GameLink {
+    display: inline-block;
+    color: #A3CFCD;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.GameLink:hover {
+    background-color: #2A272A;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "Switch": "-T0",
+    "Example": "nmap 192.168.1.1 -T0",
+    "Description": "Paranoid (0) Intrusion Detection\nSystem evasion"
+  },
+  {
+    "Switch": "-T1",
+    "Example": "nmap 192.168.1.1 -T1",
+    "Description": "Sneaky (1) Intrusion Detection System\nevasion"
+  },
+  {
+    "Switch": "-T2",
+    "Example": "nmap 192.168.1.1 -T2",
+    "Description": "Polite (2) slows down the scan to use\nless bandwidth and use less target\nmachine resources"
+  },
+  {
+    "Switch": "-T3",
+    "Example": "nmap 192.168.1.1 -T3",
+    "Description": "Normal (3) which is default speed"
+  },
+  {
+    "Switch": "-T4",
+    "Example": "nmap 192.168.1.1 -T4",
+    "Description": "Aggressive (4) speeds scans; assumes\nyou are on a reasonably fast and\nreliable network\n\n"
+  },
+  {
+    "Switch": "-T5",
+    "Example": "nmap 192.168.1.1 -T5",
+    "Description": "Insane (5) speeds scan; assumes you\nare on an extraordinarily fast network"
+  }
+]

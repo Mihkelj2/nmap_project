@@ -1,0 +1,12 @@
+[
+  {
+    "Switch": "-6",
+    "Example": "nmap -6 2607:f0d0:1002:51::4",
+    "Description": "Enable IPv6 scanning"
+  },
+  {
+    "Switch": "-h",
+    "Example": "nmap -h",
+    "Description": "nmap help screen"
+  }
+]

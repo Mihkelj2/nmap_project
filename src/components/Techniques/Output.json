@@ -1,0 +1,67 @@
+[
+  {
+    "Switch": "-oN",
+    "Example": "nmap 192.168.1.1 -oN normal.file",
+    "Description": "Normal output to the file normal.file"
+  },
+  {
+    "Switch": "-oX",
+    "Example": "nmap 192.168.1.1 -oX xml.file",
+    "Description": "XML output to the file xml.file"
+  },
+  {
+    "Switch": "-oG",
+    "Example": "nmap 192.168.1.1 -oG grep.file",
+    "Description": "Grepable output to the file grep.file"
+  },
+  {
+    "Switch": "-oA",
+    "Example": "nmap 192.168.1.1 -oA results",
+    "Description": "Output in the three major formats at once"
+  },
+  {
+    "Switch": "-oG -",
+    "Example": "nmap 192.168.1.1 -oG -\n\n",
+    "Description": "Grepable output to screen. -oN -, -oX - also usable"
+  },
+  {
+    "Switch": "--append-output",
+    "Example": "nmap 192.168.1.1 -oN file.file --append-output",
+    "Description": "Append a scan to a previous scan file"
+  },
+  {
+    "Switch": "-v",
+    "Example": "nmap 192.168.1.1 -v",
+    "Description": "Increase the verbosity level (use -vv or more for greater effect)"
+  },
+  {
+    "Switch": "-d",
+    "Example": "nmap 192.168.1.1 -d",
+    "Description": "Increase debugging level (use -dd or more for greater effect)"
+  },
+  {
+    "Switch": "--reason",
+    "Example": "nmap 192.168.1.1 --reason",
+    "Description": "Display the reason a port is in a particular state, same output as -vv"
+  },
+  {
+    "Switch": "--open",
+    "Example": "nmap 192.168.1.1 --open",
+    "Description": "Only show open (or possibly open) ports"
+  },
+  {
+    "Switch": "--packet-trace",
+    "Example": "nmap 192.168.1.1 -T4 --packet-trace",
+    "Description": "Show all packets sent and received"
+  },
+  {
+    "Switch": "--iflist",
+    "Example": "nmap --iflist",
+    "Description": "Shows the host interfaces and routes"
+  },
+  {
+    "Switch": "--resume",
+    "Example": "nmap --resume results.file",
+    "Description": "Resume a scan"
+  }
+]

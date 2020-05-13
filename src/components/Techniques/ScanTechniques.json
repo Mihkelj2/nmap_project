@@ -1,0 +1,32 @@
+[
+  {
+    "Switch": "-sS",
+    "Example": "nmap 192.168.1.1 -sS",
+    "Description": "TCP SYN port scan (Default)"
+  },
+  {
+    "Switch": "-sT",
+    "Example": "nmap 192.168.1.1 -sT",
+    "Description": "TCP connect port scan\n(Default without root privilege)"
+  },
+  {
+    "Switch": "-sU",
+    "Example": "nmap 192.168.1.1 -sU",
+    "Description": "UDP port scan"
+  },
+  {
+    "Switch": "-sA",
+    "Example": "nmap 192.168.1.1 -sA",
+    "Description": "TCP ACK port scan"
+  },
+  {
+    "Switch": "-sW",
+    "Example": "nmap 192.168.1.1 -sW",
+    "Description": "TCP Window port scan"
+  },
+  {
+    "Switch": "-sM",
+    "Example": "nmap 192.168.1.1 -sM",
+    "Description": "TCP Maimon port scan"
+  }
+]
