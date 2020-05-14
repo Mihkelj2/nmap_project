@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import './NameForm.css';
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import NmapBuilder from "./NmapBuilder";
 import NmapHelper from "./NmapHelper";
@@ -25,12 +26,19 @@ function Header() {
     return (
         <Router>
             <div className={"header"}>
-                <a href={"https://github.com/0x0n0x"} className={"logo"}>0x0n0x Github</a>
+                {/* Location of the logo */}
+                <a href="https://github.com/0x0n0x" className={"cta"}>
+                    <span>0x0n0x Github v1.2</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"/>
+                        <polyline points="8 1 12 5 8 9"/>
+                    </svg>
+                </a>
+                {/* Right place in the header */}
                 <div className={"header-right"}>
                     <Link to={"/"}>Home</Link>
                     <Link to={"/Trainer"}>Trainer</Link>
-                    <Link to={"/AllCommands"}>Nmap Commands</Link>
-                    <Link to={"/AboutNmap"}>About Nmap</Link>
+                    <Link to={"/AllCommands"}>Commands</Link>
                 </div>
             </div>
 
@@ -58,24 +66,25 @@ const yes = () => (
 
 const Trainer = () => (
     <Router>
-        <div className={"scrollmenu"}>
-            <Link to={"/AdvancedTimingandPerformance"} className={"GameLink"}>Advanced Timing and Performance</Link>
-            <Link to={"/FirewallIDSEvasionandSpoofing"} className={"GameLink"}>Firewall ID'S Evasion and Spoofing</Link>
-            <Link to={"/HostDiscovery"} className={"GameLink"}>Host Discovery</Link>
-            <Link to={"/MiscellaneousOptions"} className={"GameLink"}>Miscellaneous Options</Link>
-            <Link to={"/NSEScripts"} className={"GameLink"}>NSE Scripts</Link>
-            <Link to={"/OSDetection"} className={"GameLink"}>OS Detection</Link>
+        <div>
+            <div className={"scrollmenu"}>
+                <Link to={"/AdvancedTimingandPerformance"} className={"GameLink"}>Advanced Timing and Performance</Link>
+                <Link to={"/FirewallIDSEvasionandSpoofing"} className={"GameLink"}>Firewall ID'S Evasion and Spoofing</Link>
+                <Link to={"/HostDiscovery"} className={"GameLink"}>Host Discovery</Link>
+                <Link to={"/MiscellaneousOptions"} className={"GameLink"}>Miscellaneous Options</Link>
+                <Link to={"/NSEScripts"} className={"GameLink"}>NSE Scripts</Link>
+                <Link to={"/OSDetection"} className={"GameLink"}>OS Detection</Link>
+            </div>
+            <div className={"scrollmenu"}>
+                <Link to={"/Output"} className={"GameLink"}>Output</Link>
+                <Link to={"/PortSpecification"} className={"GameLink"}>Port Specification</Link>
+                <Link to={"/ScanTechniques"} className={"GameLink"}>Scan Techniques</Link>
+                <Link to={"/ServiceandVersionDetection"} className={"GameLink"}>Service and Version Detection</Link>
+                <Link to={"/TargetSpecification"} className={"GameLink"}>Target Specification</Link>
+                <Link to={"/TimingandPerformance"} className={"GameLink"}>Timing and Performance</Link>
+                <Link to={"/UsefulNSEScripts"} className={"GameLink"}>Useful NSES cripts</Link>
+            </div>
         </div>
-        <div className={"scrollmenu"}>
-            <Link to={"/Output"} className={"GameLink"}>Output</Link>
-            <Link to={"/PortSpecification"} className={"GameLink"}>Port Specification</Link>
-            <Link to={"/ScanTechniques"} className={"GameLink"}>Scan Techniques</Link>
-            <Link to={"/ServiceandVersionDetection"} className={"GameLink"}>Service and Version Detection</Link>
-            <Link to={"/TargetSpecification"} className={"GameLink"}>Target Specification</Link>
-            <Link to={"/TimingandPerformance"} className={"GameLink"}>Timing and Performance</Link>
-            <Link to={"/UsefulNSEScripts"} className={"GameLink"}>Useful NSES cripts</Link>
-        </div>
-
         <Route exact path="/AdvancedTimingandPerformance" component={AdvancedTimingandPerformance}/>
         <Route exact path="/FirewallIDSEvasionandSpoofing" component={FirewallIDSEvasionandSpoofing}/>
         <Route exact path="/HostDiscovery" component={HostDiscovery}/>
@@ -99,7 +108,7 @@ const AllCommands = () => (
 );
 
 const AdvancedTimingandPerformance = () => (
-    <div>
+    <div className={"FullBox"}>
         <NameForm PostData={DATA1}/>
     </div>
 );

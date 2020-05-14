@@ -16,19 +16,26 @@ import MiscellaneousOptions from './Techniques/MiscellaneousOptions'
 
 function NmapHelper() {
     return (
-        <div className={"container"}>
-            <TargetSpecification/>
-            <ScanTechniques/>
-            <HostDiscovery/>
-            <PortSpecification/>
-            <ServiceandVersionDetection/>
-            <OSDetection/>
-            <TimingandPerformance/>
-            <AdvancedTimingandPerformance/>
-            <NSEScripts/>
-            <FirewallIDSEvasionandSpoofing/>
-            <Output/>
-            <MiscellaneousOptions/>
+        <div>
+            <div className={"Credits"}>
+                <h1>Many thanks to Nathan House</h1>
+                <h3>Link used to create this table: https://www.stationx.net/nmap-cheat-sheet</h3>
+            </div>
+            <div className={"container"}>
+                <TargetSpecification/>
+                <ScanTechniques/>
+                <HostDiscovery/>
+                <PortSpecification/>
+                <ServiceandVersionDetection/>
+                <OSDetection/>
+                <TimingandPerformance/>
+                <AdvancedTimingandPerformance/>
+                <NSEScripts/>
+                <FirewallIDSEvasionandSpoofing/>
+                <Output/>
+                <MiscellaneousOptions/>
+            </div>
+
         </div>
     )
 }

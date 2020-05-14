@@ -63,32 +63,33 @@ input:checked + .slider:before {
 
 .TrainerBox {
     margin: auto;
-    width: 50%;
+    left: 50%;
+    top: 100%;
     color: black;
     font-size: xx-large;
 }
 
 .questionDiv {
+    color: whitesmoke;
     font-size: xx-large;
     text-align: center;
 }
 
 .exampleDiv {
+    color: whitesmoke;
     font-size: small;
     text-align: center;
+    align-content: center;
+
 }
 
 .AnswerDiv {
     font-size: large;
-    float: right;
+    margin: 0 auto;
+    left: 50%;
+    position: fixed;
 }
 
 .FullBox {
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #677381;
+
 }

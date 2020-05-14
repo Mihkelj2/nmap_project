@@ -1,18 +1,46 @@
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #4B4A54;
+    background-color: #143642;
     padding: 20px 10px;
 }
 
-body{
-    background-image: linear-gradient(to right, #82A0AA, #A3CFCD);
+body {
+    background: linear-gradient(270deg, #b76935, #143642);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:77% 0%}
+    50%{background-position:24% 100%}
+    100%{background-position:77% 0%}
 }
 
 /* Style the header links */
 .header a {
     float: left;
-    color: #000000;
+    color: whitesmoke;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -25,12 +53,6 @@ body{
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-    border: #282c34;
-    color: #A3CFCD;
 }
 
 
@@ -52,20 +74,75 @@ body{
     }
 }
 
-.scrollmenu {
-    background-color: #677381;
-    overflow: auto;
-    white-space: nowrap;
-}
-
 .GameLink {
     display: inline-block;
-    color: #A3CFCD;
+    color: whitesmoke;
     text-align: center;
-    padding: 14px;
-    text-decoration: none;
+    padding: 15px;
 }
 
 .GameLink:hover {
-    background-color: #2A272A;
+    background-color: #F79D65;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #B76935;
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: whitesmoke;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #B76935;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
 }

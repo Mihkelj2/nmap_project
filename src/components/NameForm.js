@@ -77,22 +77,25 @@ class NameForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit} className={"TrainerBox"}>
-                <div className={"FullBox"}>
-                    <div className={"questionDiv"}>
-                        {this._question.value}
-                    </div>
-                    <div className={"exampleDiv"}>
-                        For Example: {this._example.value}
-                    </div>
-                    <label className={"AnswerDiv"}>
-                        Answer: <input type="text" value={this._state.value} onChange={this.handleChange}/>
-                        <input type="submit" value="Submit"/>
-                    </label>
+                <form onSubmit={this.handleSubmit} className={"TrainerBox"}>
+                    <div className={"FullBox"}>
+                        <div>
+                            <div className={"questionDiv"}>
+                                {this._question.value}
+                            </div>
+                            <div className={"exampleDiv"}>
+                                For Example: {this._example.value}
+                            </div>
+                            <div className={"AnswerDiv"}>
+                                <label>
+                                    Answer: <input type="text" value={this._state.value} onChange={this.handleChange}/>
+                                    <input type="submit" value="Submit"/>
+                                </label>
+                            </div>
 
-                </div>
-
-            </form>
+                        </div>
+                    </div>
+                </form>
         );
     }
 }
