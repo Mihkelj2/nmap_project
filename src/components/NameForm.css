@@ -87,9 +87,11 @@ input:checked + .slider:before {
     font-size: large;
     margin: 0 auto;
     left: 50%;
-    position: fixed;
 }
 
 .FullBox {
-
+    margin-left: 200px;
+    padding-left: 20px;
+    position: absolute;
+    height: 50%;
 }

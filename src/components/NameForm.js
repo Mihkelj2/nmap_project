@@ -57,7 +57,6 @@ class NameForm extends React.Component {
         if (lastQuestion === this._question.value) {
             this.getRandomQuestion()
         }
-        {console.log(this._question.value, this._answer.value, this._example.value)}
     }
 
     handleChange(event) {
@@ -75,27 +74,36 @@ class NameForm extends React.Component {
         event.preventDefault();
     }
 
-    render() {
-        return (
-                <form onSubmit={this.handleSubmit} className={"TrainerBox"}>
-                    <div className={"FullBox"}>
-                        <div>
-                            <div className={"questionDiv"}>
-                                {this._question.value}
-                            </div>
-                            <div className={"exampleDiv"}>
-                                For Example: {this._example.value}
-                            </div>
-                            <div className={"AnswerDiv"}>
-                                <label>
-                                    Answer: <input type="text" value={this._state.value} onChange={this.handleChange}/>
-                                    <input type="submit" value="Submit"/>
-                                </label>
-                            </div>
+    addOneToList() {
+        let myScore;
+        myScore = window.localStorage;
+        let score = parseInt(myScore.getItem('score')) + 1
+        myScore.setItem("score", score)
+        console.log(score)
+    }
 
+    render() {
+        this.addOneToList()
+        return (
+            <form onSubmit={this.handleSubmit} className={"TrainerBox"}>
+                <div className={"FullBox"}>
+                    <div>
+                        <div className={"questionDiv"}>
+                            {this._question.value}
                         </div>
+                        <div className={"exampleDiv"}>
+                            For Example: {this._example.value}
+                        </div>
+                        <div className={"AnswerDiv"}>
+                            <label>
+                                Answer: <input type="text" value={this._state.value} onChange={this.handleChange}/>
+                                <input type="submit" value="Submit"/>
+                            </label>
+                        </div>
+
                     </div>
-                </form>
+                </div>
+            </form>
         );
     }
 }

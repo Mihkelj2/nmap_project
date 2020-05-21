@@ -6,35 +6,21 @@
 }
 
 body {
-    background: linear-gradient(270deg, #b76935, #143642);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    -o-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-
+    animation: gradient 15s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Style the header links */
@@ -75,10 +61,11 @@ body {
 }
 
 .GameLink {
-    display: inline-block;
+    display: block;
     color: whitesmoke;
-    text-align: center;
+    text-align: left;
     padding: 15px;
+    width: 100%;
 }
 
 .GameLink:hover {
@@ -145,4 +132,15 @@ a {
 
 .cta:active {
     transform: scale(0.96);
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
 }
