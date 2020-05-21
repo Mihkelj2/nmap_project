@@ -10,5 +10,5 @@ See oli mõeldud suurte võrkude kiireks skannimiseks, kuid töötab hästi ka �
 ### Rakenduse funktsionaalsuse kirjeldus
 
 ##### 1. Nmap Builder
-Rakendusel on võimalik ehitada nmapi terminali koodi veebilehekuljel
+Rakendusel on võimalik ehitada nmapi terminali koodi veebilehekuljel.
 Samuti on võimalik lugeda kõiki commande ning harjutada neid meelde jätta
